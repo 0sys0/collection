@@ -1,4 +1,9 @@
 ## ss配置
+安装
+```
+apt-get update
+apt-get install python-pip python-setuptools m2crypto
+```
 配置文件： 
 ```
 /etc/shadowsocks.json
