@@ -1,17 +1,21 @@
+ubuntu 16.04:
 
 1：查看当前安装的内核
 dpkg -l|grep linux-image
 
-2：查看可以更新的内核版本：
-sudo apt-cache search linux-image
+2：安装新内核
+apt-get install linux-image-4.4.0-47-generic linux-image-extra-4.4.0-47-generic
 
-3：安装新内核
-sudo apt-get install linux-image-3.13.0-74-generic linux-image-extra-3.13.0-74-generic
+3：卸载不要的内核
+apt-get purge linux-image-4.4.0-62-generic linux-image-extra-4.4.0-62-generic linux-image-4.4.0-87-generic linux-image-extra-4.4.0-87-generic
+apt-get purge linux-image-4.4.0-104-generic linux-image-extra-4.4.0-104-generic
 
-4：卸载不要的内核
-sudo apt-get purge linux-image-3.13.0-xx-generic linux-image-extra-3.13.0-xx-generic
-
-5：更新 grub引导
-sudo update-grub
+4：更新 grub引导
+update-grub
 
 重启系统查看
+
+5：查看内核版本
+cat /proc/version
+或
+uname -a
