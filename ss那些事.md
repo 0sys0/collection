@@ -1,4 +1,4 @@
-# ss配置
+## ss配置
 配置文件： 
 ```
 /etc/shadowsocks.json
@@ -18,7 +18,7 @@ ssserver -c /etc/shadowsocks.json -d start
 ssserver -c /etc/shadowsocks.json -d stop
 ```
 
-# 更换内核步骤
+## 更换内核步骤
 (vultr ubuntu 16.04)
 
 1：查看当前安装的内核
@@ -53,7 +53,7 @@ cat /proc/version
 uname -a
 ```
 
-# 装锐速
+## 装锐速
 
 安装
 ```
