@@ -13,3 +13,7 @@ https://tieba.baidu.com/p/5681620057?pid=119515220407&cid=0&red_tag=3394486965#1
 【双语注释】考据ZUN作曲所使用的工具以及乐器 EP.1
 
 https://www.bilibili.com/video/av15644069
+
+ＤＸライブラリ置き場
+
+http://dxlib.o.oo7.jp/
