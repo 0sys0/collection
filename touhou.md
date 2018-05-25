@@ -21,3 +21,7 @@ http://dxlib.o.oo7.jp/
 东方同人游戏里有没有哪款游戏是使用UDK制作的？
 
 https://tieba.baidu.com/p/3304167671?pn=1
+
+问个很严肃的问题，东方是用什么软件制作的
+
+https://tieba.baidu.com/p/1322663480?pn=1
