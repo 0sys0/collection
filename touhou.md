@@ -25,3 +25,7 @@ https://tieba.baidu.com/p/3304167671?pn=1
 问个很严肃的问题，东方是用什么软件制作的
 
 https://tieba.baidu.com/p/1322663480?pn=1
+
+如何选购MIDI键盘？
+
+https://zhuanlan.zhihu.com/p/27037951
