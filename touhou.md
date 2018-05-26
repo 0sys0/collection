@@ -42,6 +42,26 @@ https://www.zhihu.com/question/54531702
 
 https://zhuanlan.zhihu.com/p/32343497
 
-MIDI 键盘、电子琴、电钢琴及键盘合成器的区别
+编曲初学者问关于电子琴（ midi键盘）的一些问题。？
 
-https://zhuanlan.zhihu.com/p/19593176
+https://www.zhihu.com/question/277629817
+
+音乐生活—全面剖析性能巨兽Nektar Panorama P6 MIDI键盘控制器
+
+https://zhuanlan.zhihu.com/p/33207239
+
+编曲初学者问关于电子琴（ midi键盘）的一些问题。？
+
+https://www.zhihu.com/question/277629817
+
+自己有曲子要编请问是用midi键盘好还是合成器好呢？
+
+https://www.zhihu.com/question/31760058
+
+用电脑fl自学做编曲，想买个键盘学一下，该买MIDI键盘还是电子琴？
+
+https://www.zhihu.com/question/38939131/answer/78891577
+
+使用旗舰MIDI键盘+顶级钢琴音源练习钢琴有什么局限性？什么时候需要用声学钢琴练习？
+
+https://www.zhihu.com/question/53443457/answer/135177594
