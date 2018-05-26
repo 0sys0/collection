@@ -84,6 +84,10 @@ https://www.youtube.com/results?search_query=THFont+
 
 https://tieba.baidu.com/p/2622005495?pid=39581137604&cid=0&red_tag=3430651279#39581137604
 
+ZUN的音源，入手成功
+
+https://tieba.baidu.com/p/4195550001?pid=80077993749&cid=0&red_tag=3424407083#80077993749
+
 # 以下有关音源
 
 Edirol Hyper Canvas 
