@@ -37,3 +37,7 @@ https://www.zhihu.com/question/39806992/answer/83881873
 本人现在想要学习电音，用的水果，想要入手一台midi键盘，有没有性价比比较合适的 ，求推荐？
 
 https://www.zhihu.com/question/54531702
+
+科普：什么是MIDI键盘，有哪些好的MIDI键盘推荐？
+
+https://zhuanlan.zhihu.com/p/32343497
