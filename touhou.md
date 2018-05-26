@@ -88,6 +88,8 @@ ZUN的音源，入手成功
 
 https://tieba.baidu.com/p/4195550001?pid=80077993749&cid=0&red_tag=3424407083#80077993749
 
+https://www.bilibili.com/video/av3320828
+
 # 以下有关音源
 
 Edirol Hyper Canvas 
