@@ -68,8 +68,32 @@ https://www.zhihu.com/question/53443457/answer/135177594
 
 https://www.zhihu.com/question/66696631
 
+【東方】神主の音源SD-90ってこんな音【MIDI】
+
+http://www.nicovideo.jp/watch/sm7011655
+
+# 以下有关音源
+
+Edirol Hyper Canvas 
+
+sc88pro
+
 ZUN-style MIDI
 
 https://www.shrinemaiden.org/forum/index.php?topic=8608.0
 
-# Edirol Hyper Canvas 
+THFont(rev10) experimentation thread
+
+https://www.shrinemaiden.org/forum/index.php?topic=11778.0
+
+Trial:To nearly perfectly play ZUN's midis WITHOUT a SD-90 
+
+https://www.shrinemaiden.org/forum/index.php/topic,20868.msg1348440.html#msg1348440
+
+For those interested: new THfont links 
+
+https://www.shrinemaiden.org/forum/index.php/topic,19436.msg1244525.html#msg1244525
+
+[Music][Request] THFont that sounds more like an SD-40/90/etc
+
+https://www.shrinemaiden.org/forum/index.php/topic,17752.msg1150579.html#msg1150579
