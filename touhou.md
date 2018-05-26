@@ -41,3 +41,7 @@ https://www.zhihu.com/question/54531702
 科普：什么是MIDI键盘，有哪些好的MIDI键盘推荐？
 
 https://zhuanlan.zhihu.com/p/32343497
+
+MIDI 键盘、电子琴、电钢琴及键盘合成器的区别
+
+https://zhuanlan.zhihu.com/p/19593176
