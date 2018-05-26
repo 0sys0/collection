@@ -80,6 +80,10 @@ THFONT
 
 https://www.youtube.com/results?search_query=THFont+
 
+【自翻】ZUN美国之行访谈录
+
+https://tieba.baidu.com/p/2622005495?pid=39581137604&cid=0&red_tag=3430651279#39581137604
+
 # 以下有关音源
 
 Edirol Hyper Canvas 
