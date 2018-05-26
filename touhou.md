@@ -50,10 +50,6 @@ https://www.zhihu.com/question/277629817
 
 https://zhuanlan.zhihu.com/p/33207239
 
-编曲初学者问关于电子琴（ midi键盘）的一些问题。？
-
-https://www.zhihu.com/question/277629817
-
 自己有曲子要编请问是用midi键盘好还是合成器好呢？
 
 https://www.zhihu.com/question/31760058
@@ -65,3 +61,7 @@ https://www.zhihu.com/question/38939131/answer/78891577
 使用旗舰MIDI键盘+顶级钢琴音源练习钢琴有什么局限性？什么时候需要用声学钢琴练习？
 
 https://www.zhihu.com/question/53443457/answer/135177594
+
+如何选购一款1000以内的高性价比MIDI键盘？
+
+https://www.zhihu.com/question/66696631
