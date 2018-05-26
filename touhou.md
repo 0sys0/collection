@@ -65,3 +65,7 @@ https://www.zhihu.com/question/53443457/answer/135177594
 如何选购一款1000以内的高性价比MIDI键盘？
 
 https://www.zhihu.com/question/66696631
+
+ZUN-style MIDI
+
+https://www.shrinemaiden.org/forum/index.php?topic=8608.0
