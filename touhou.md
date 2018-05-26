@@ -72,6 +72,10 @@ https://www.zhihu.com/question/66696631
 
 http://www.nicovideo.jp/watch/sm7011655
 
+【东方】ZUN的SD-90音源听起来是这样的（新增3P）(1)
+
+https://www.bilibili.com/video/av6839526/index_2.html#page=1
+
 THFONT
 
 https://www.youtube.com/results?search_query=THFont+
