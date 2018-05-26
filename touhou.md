@@ -72,6 +72,10 @@ https://www.zhihu.com/question/66696631
 
 http://www.nicovideo.jp/watch/sm7011655
 
+THFONT
+
+https://www.youtube.com/results?search_query=THFont+
+
 # 以下有关音源
 
 Edirol Hyper Canvas 
