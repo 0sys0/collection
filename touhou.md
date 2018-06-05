@@ -90,6 +90,10 @@ https://tieba.baidu.com/p/4195550001?pid=80077993749&cid=0&red_tag=3424407083#80
 
 https://www.bilibili.com/video/av3320828
 
+调与调式
+
+https://wenku.baidu.com/view/7530e10d581b6bd97f19eadb.html
+
 # 以下有关音源
 
 Edirol Hyper Canvas 
