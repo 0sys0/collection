@@ -3,6 +3,7 @@
 ```
 apt-get update
 apt-get install python-pip python-setuptools m2crypto
+pip install wheel shadowsocks
 ```
 配置文件： 
 ```
