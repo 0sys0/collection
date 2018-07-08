@@ -7,7 +7,7 @@ pip install wheel shadowsocks
 ```
 配置文件： 
 ```
-/etc/shadowsocks.json
+shadowsocks.json
 {
     "server":"::",
     "server_port":8388,
@@ -20,8 +20,8 @@ pip install wheel shadowsocks
 ```
 后台运行
 ```
-ssserver -c /etc/shadowsocks.json -d start
-ssserver -c /etc/shadowsocks.json -d stop
+ssserver -c shadowsocks.json -d start
+ssserver -c shadowsocks.json -d stop
 ```
 
 ## 更换内核步骤
