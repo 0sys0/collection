@@ -1,4 +1,5 @@
 https://www.cnblogs.com/cxjchen/p/3148582.html
+"""
 这样就可以了，保证只取得了一个实例。但是在多线程的环境下却不行了，因为很可能两个线程同时运行到if (instance == NULL)这一句，导致可能会产生两个实例。于是就要在代码中加锁。
 Singleton* getInstance()
 {
@@ -41,3 +42,4 @@ private:
 
 	static Singleton* instance;
 };
+"""
