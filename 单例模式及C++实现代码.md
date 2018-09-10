@@ -3,6 +3,7 @@ https://blog.csdn.net/q_l_s/article/details/52369065
 https://www.cnblogs.com/qiaoconglovelife/p/5851163.html
 
 https://www.cnblogs.com/cxjchen/p/3148582.html
+饿汉：
 
 	这样就可以了，保证只取得了一个实例。但是在多线程的环境下却不行了，因为很可能两个线程同时运行到if (instance == NULL)这一句，导致可能会产生两个实例。于是就要在代码中加锁。
 	Singleton* getInstance()
@@ -32,19 +33,18 @@ https://www.cnblogs.com/cxjchen/p/3148582.html
 	    return instance;
 	}
 
+懒汉：
 
-	class singleton
-	{
-	protected:
-	    singleton()
-	    {}
-	private:
-	    static singleton* p;
-	public:
-	    static singleton* initance();
-	};
-	singleton* singleton::p = new singleton;
-	singleton* singleton::initance()
-	{
-	    return p;
-	}
+	class CSingleton    
+	{    
+	private:    
+	    CSingleton()      
+	    {    
+	    }    
+	public:    
+	    static CSingleton * GetInstance()    
+	    {    
+		static CSingleton instance;     
+		return &instance;    
+	    }    
+	};    
