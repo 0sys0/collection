@@ -29,19 +29,20 @@ https://www.cnblogs.com/cxjchen/p/3148582.html
 
 	    return instance;
 	}
-	这样只够极低的几率下，通过越过了if (instance == NULL)的线程才会有进入锁定临界区的可能性，这种几率还是比较低的，不会阻塞太多的线程，但为了防止一个线程进入临界区创建实例，另外的线程也进去临界区创建实例，又加上了一道防御if (instance == NULL)，这样就确保不会重复创建了。
 
 
-	class Singleton{
-	public:
-		static Singleton* getInstance();
-
+	class singleton
+	{
+	protected:
+	    singleton()
+	    {}
 	private:
-		Singleton();
-		//把复制构造函数和=操作符也设为私有,防止被复制
-		Singleton(const Singleton&);
-		Singleton& operator=(const Singleton&);
-
-		static Singleton* instance;
+	    static singleton* p;
+	public:
+	    static singleton* initance();
 	};
-
+	singleton* singleton::p = new singleton;
+	singleton* singleton::initance()
+	{
+	    return p;
+	}
