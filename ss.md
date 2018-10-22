@@ -22,6 +22,7 @@ shadowsocks.json
     "method":"aes-256-cfb",
     "fast_open": true
 }
+scp -r shadowsocks.json root@144.202.102.232:/root/shadowsocks.json
 ```
 后台运行
 ```
