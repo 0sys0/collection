@@ -7,6 +7,7 @@ https://blog.csdn.net/blackfrog_unique/article/details/60320737
 ```
 apt-get update
 apt-get install python-pip python-setuptools m2crypto
+pip install setuptools --upgrade
 pip install wheel shadowsocks
 ```
 配置文件： 
