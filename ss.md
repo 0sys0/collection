@@ -1,3 +1,7 @@
+Kali2.0 update到最新版本后安装shadowsocks服务报错问题
+
+https://blog.csdn.net/blackfrog_unique/article/details/60320737
+
 ## ss配置
 安装
 ```
