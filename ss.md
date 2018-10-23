@@ -23,8 +23,7 @@ shadowsocks.json
     "local_port":1080,
     "password":"digitaloceanss",
     "timeout":300,
-    "method":"aes-256-cfb",
-    "fast_open": true
+    "method":"aes-256-cfb"
 }
 scp -r shadowsocks.json root@144.202.102.232:/root/shadowsocks.json
 ```
