@@ -19,7 +19,7 @@ pip install wheel shadowsocks
 shadowsocks.json
 {
     "server":"::",
-    "server_port":8388,
+    "server_port":8488,
     "local_port":1080,
     "password":"digitaloceanss",
     "timeout":300,
