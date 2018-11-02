@@ -9,3 +9,5 @@ https://blog.csdn.net/alan_liuyue/article/details/78361431
 ElasticSearch学习笔记（五）在logstash中配置分词器和同义词过滤器
 
 https://blog.csdn.net/q15150676766/article/details/76082215
+
+`分词、去停用词、去标点等过程在elasticsearch中由analysis模块完成`
