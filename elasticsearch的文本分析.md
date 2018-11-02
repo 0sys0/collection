@@ -1,1 +1,0 @@
-分词、去停用词、去标点等过程在elasticsearch中由analysis模块完成
