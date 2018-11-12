@@ -6,7 +6,7 @@ https://www.jianshu.com/p/daa41f0b3099
 
 https://www.elastic.co/guide/cn/elasticsearch/guide/current/pluggable-similarites.html
 
-# 调试相关度是最后 10% 要做的事情编辑
+# 调试相关度是最后 10% 要做的事情
 
 本章介绍了 Lucene 是如何基于 TF/IDF 生成评分的。理解评分过程是非常重要的， 这样就可以根据具体的业务对评分结果进行调试、调节、减弱和定制。
 
