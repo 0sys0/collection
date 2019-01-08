@@ -9,3 +9,7 @@ https://www.xuebuyuan.com/3179209.html
 Learning to rank基本算法小结
 
 https://www.jianshu.com/p/aab1bf1307fd
+
+学习排序 Learning to Rank 小结
+
+https://blog.csdn.net/nanjunxiao/article/details/8976195
