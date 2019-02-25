@@ -10,6 +10,13 @@ ES中文分词器之精确短语匹配（解决了match_phrase匹配不全的问
 
 ### 死磕 Elasticsearch 方法论
 > https://yq.aliyun.com/articles/679317
+6.类 SQL 查询工具
+
+在此，推荐 elasticsearch-SQL，其支持的 SQL，极大缩小了复杂 DSL 的实现成本。
+
+通过 elasticsearch-SQL 工具可以基于以下 SQL 语句方式请求 ES 集群。
+
+select COUNT(*),SUM(age),MIN(age) as m, MAX(age),AVG(age)FROM bank GROUP BY gender ORDER BY SUM(age), m DESC
 
 ### aggregation
 Metrics Aggregations
