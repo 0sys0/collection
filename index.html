@@ -2,57 +2,157 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <script src="/static/jquery-3.3.1.min.js"></script>
+    <script src="/static/popper.min.js"></script>
+    <script src="/static/bootstrap.min.js"></script>
     <title>随机query意图统计配置</title>
     <script>
+	function submitConfig(){
+
+	    var config = {
+
+        };
+        trs = document.getElementById("tbody").getElementsByTagName("tr");
+        for(var i  = 0;i<trs.length;i++){
+            tds = trs[i].getElementsByTagName("td");
+            category = tds[0].childNodes[0].value;
+            if(category==""){
+                break;
+            }
+            config[category] = {};
+            config[category]["class_id"] = tds[1].childNodes[0].value;
+            config[category]["xpath"] = tds[2].childNodes[0].value;
+            var select = tds[3].childNodes[0];
+            var index = select.selectedIndex;
+            config[category]["mode"] = select.options[index].value;
+            if(config[category]["mode"]=="is"){
+                config[category]["value"] = tds[4].childNodes[0].value;
+            }
+        }
+        var data = {};
+        data["email"] = document.getElementById("email").value;
+        data["config"] = config;
+        data = JSON.stringify(data);
+		$.ajax({
+				url:"/submit",
+                type: 'POST',
+                data:data,
+				success:function(msg){
+						window.alert(msg);
+				},
+			});
+	}
+        window.onload=function(){
+            count = document.getElementById("tbody").childElementCount;
+};
+
+        function deleteCategory(id){
+            document.getElementById("tbody").removeChild(id);
+        }
         function addCategory(){
-            let item = document.createElement("div")
-            item.setAttribute("class","item")
-            let nameText = document.createTextNode("意图名：")
-            let name = document.createElement("input")
-            name.setAttribute("type","input")
-            let modeText = document.createTextNode("模式：")
-            let mode = document.createElement("select")
-            let max = document.createElement("option")
-            max.setAttribute("value","max")
-            max.appendChild(document.createTextNode("最大值"))
-            let is = document.createElement("option")
-            is.setAttribute("value","is")
-            is.appendChild(document.createTextNode("精确值"))
-            mode.appendChild(max)
-            mode.appendChild(is)
-            let valueText =document.createTextNode("值（最大值不需填写）：")
-            let value =document.createElement("input")
-            value.setAttribute("type","number")
-            let xpathText =document.createTextNode("xpath表达式：")
-            let xpath = document.createElement("input")
-            xpath.setAttribute("type","input")
-            item.appendChild(document.createTextNode("-------------"))
-            item.appendChild(document.createElement("br"))
-            item.appendChild(nameText)
-            item.appendChild(name)
-            item.appendChild(document.createElement("br"))
-            item.appendChild(modeText)
-            item.appendChild(mode)
-            item.appendChild(document.createElement("br"))
-            item.appendChild(valueText)
-            item.appendChild(value)
-            item.appendChild(document.createElement("br"))
-            item.appendChild(xpathText)
-            item.appendChild(xpath)
-            item.appendChild(document.createElement("br"))
-            document.getElementsByClassName("middle")[0].appendChild(item)
+            let tr = document.createElement("tr");
+            tr.setAttribute("scope","row");
+            tr.setAttribute("id","row"+count);
+            td = document.createElement("td");
+            let category = document.createElement("input");
+            category.setAttribute("type","input");
+            td.appendChild(category);
+            tr.appendChild(td);
+            td = document.createElement("td");
+            let class_id = document.createElement("input");
+            class_id.setAttribute("type","input");
+            td.appendChild(class_id);
+            tr.appendChild(td);
+            td = document.createElement("td");
+            let xpath = document.createElement("input");
+            xpath.setAttribute("type","input");
+            td.appendChild(xpath);
+            tr.appendChild(td);
+            td = document.createElement("td");
+            let mode = document.createElement("select");
+            let max = document.createElement("option");
+            max.setAttribute("value","max");
+            max.appendChild(document.createTextNode("最大值"));
+            let is = document.createElement("option");
+            is.setAttribute("value","is");
+            is.appendChild(document.createTextNode("精确值"));
+            mode.appendChild(max);
+            mode.appendChild(is);
+            td.appendChild(mode);
+            tr.appendChild(td);
+            td = document.createElement("td");
+            let value =document.createElement("input");
+            value.setAttribute("type","number");
+            td.appendChild(value);
+            tr.appendChild(td);
+            td = document.createElement("td");
+            let button = document.createElement("button");
+            button.setAttribute("class","btn btn-danger");
+            button.setAttribute("type","button");
+            button.appendChild(document.createTextNode("删除"));
+            rownumber = document.getElementsByTagName("tr").length;
+            button.setAttribute("onclick","deleteCategory("+tr.getAttribute("id")+")");
+            td.appendChild(button);
+            tr.appendChild(td);
+            document.getElementById("tbody").appendChild(tr);
+            count++;
         }
     </script>
 </head>
 <body>
+    <div class="jumbotron">
+        <h1>随机query意图统计配置</h1>
+        <p class="lead">表格字段的说明</p>
+        <hr>
+        <p>class_id：意图对应的class_id</p>
+        <p>xpath：用于定位意图的xpath，一般//+字段名就可以了，复杂情况参考http://www.runoob.com/xpath/xpath-syntax.html</p>
+        <p>值：class_id的取值，只有模式为精确值时需要填写，最大值置空就可以</p>
+    </div>
     <form action="submit" method="post" id="form">
-        <div class="middle" id="middle">
-            Email地址： <input type="email" name="email"><br>
-            {{load}}
-        </div>
-        <div class="right">
-            <input type="button" value="新增类别" onclick="addCategory()"><br>
-            <input type="submit" value="提交" id="submit"><br>
-        </div>
+        <div>Email地址： <input class="col-6" type="email" id="email" value="{{ email }}">
+                        <button type="button" onclick="addCategory()" class="btn btn-primary">新增类别</button>
+            <button type="button" onclick="submitConfig()" id="submit" class="btn btn-primary">提交</button>
+</div>
+            <div>
+            <table class="table">
+              <thead>
+                <tr scope="row">
+
+                  <th scope="col">意图类别</th>
+                    <th scope="col">class_id</th>
+                    <th scope="col">xpath</th>
+                  <th scope="col">模式</th>
+                  <th scope="col">值</th>
+                    <th scope="col">删除</th>
+                </tr>
+              </thead>
+              <tbody id="tbody">
+              {% for each in config %}
+                <tr scope="row" id="row{{ loop.index-1 }}">
+                    <td><input type="input" value="{{ each['category'] }}"></td>
+                    <td><input type="input" value="{{ each['class_id'] }}"></td>
+                    <td><input type="input" value="{{ each['xpath'] }}"></td>
+                    <td><select>
+                        {% if each['mode']=='max' %}
+                        <option value="max" selected="selected">最大值</option>
+                        <option value="is">精确值</option>
+                        {% else %}
+                        <option value="max">最大值</option>
+                        <option value="is" selected="selected">精确值</option>
+                        {% endif %}
+                    </select>
+                    </td>
+                    {% if each['mode']=='is' %}
+                    <td><input type="number" value="{{ each['value'] }}"></td>
+                    {% else %}
+                    <td><input type="number" ></td>
+                    {% endif %}
+                    <td><button type="button" class="btn btn-danger" onclick="deleteCategory(row{{ loop.index-1 }})">删除</button></td>
+                </tr>
+              {% endfor %}
+              </tbody>
+            </table></div>
+
     </form>
 </body>
