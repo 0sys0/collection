@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>随机query意图统计配置</title>
+    <script>
+        function addCategory(){
+            let item = document.createElement("div")
+            item.setAttribute("class","item")
+            let nameText = document.createTextNode("意图名：")
+            let name = document.createElement("input")
+            name.setAttribute("type","input")
+            let modeText = document.createTextNode("模式：")
+            let mode = document.createElement("select")
+            let max = document.createElement("option")
+            max.setAttribute("value","max")
+            max.appendChild(document.createTextNode("最大值"))
+            let is = document.createElement("option")
+            is.setAttribute("value","is")
+            is.appendChild(document.createTextNode("精确值"))
+            mode.appendChild(max)
+            mode.appendChild(is)
+            let valueText =document.createTextNode("值（最大值不需填写）：")
+            let value =document.createElement("input")
+            value.setAttribute("type","number")
+            let xpathText =document.createTextNode("xpath表达式：")
+            let xpath = document.createElement("input")
+            xpath.setAttribute("type","input")
+            item.appendChild(document.createTextNode("-------------"))
+            item.appendChild(document.createElement("br"))
+            item.appendChild(nameText)
+            item.appendChild(name)
+            item.appendChild(document.createElement("br"))
+            item.appendChild(modeText)
+            item.appendChild(mode)
+            item.appendChild(document.createElement("br"))
+            item.appendChild(valueText)
+            item.appendChild(value)
+            item.appendChild(document.createElement("br"))
+            item.appendChild(xpathText)
+            item.appendChild(xpath)
+            item.appendChild(document.createElement("br"))
+            document.getElementsByClassName("middle")[0].appendChild(item)
+        }
+    </script>
+</head>
+<body>
+    <form action="submit" method="post" id="form">
+        <div class="middle" id="middle">
+            Email地址： <input type="email" name="email"><br>
+            {{load}}
+        </div>
+        <div class="right">
+            <input type="button" value="新增类别" onclick="addCategory()"><br>
+            <input type="submit" value="提交" id="submit"><br>
+        </div>
+    </form>
+</body>
