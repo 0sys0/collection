@@ -9,3 +9,20 @@ const browser = await puppeteer.launch({
   ]
 });
 ```
+```
+const puppeteer = require('puppeteer');
+
+async function getPic() {
+  const browser = await puppeteer.launch({args: [
+    '--proxy-server="direct://"',
+    '--proxy-bypass-list=*'
+  ]});
+  const page = await browser.newPage();
+  await page.goto('https://www.google.com');
+  await page.screenshot({path: 'google.png'});
+
+  await browser.close();
+}
+
+getPic();
+```
