@@ -26,3 +26,17 @@ async function getPic() {
 
 getPic();
 ```
+因此需要在使用reuqests_html或pyppeteer时要这样修改：
+```
+#pyppeteer/laucher.py, line 102
+        if 'headless' not in self.options or self.options.get('headless'):
+            self.chrome_args.extend([
+                '--headless',
+                '--disable-gpu',
+                '--hide-scrollbars',
+                '--mute-audio',
+                #windows系统专用
+                '--proxy-server="direct://"',
+                '--proxy-bypass-list=*'
+            ])
+```
