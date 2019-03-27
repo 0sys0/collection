@@ -40,3 +40,5 @@ getPic();
                 '--proxy-bypass-list=*'
             ])
 ```
+websocket==6.0
+> https://github.com/miyakogi/pyppeteer/pull/170
