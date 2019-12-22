@@ -1,0 +1,1 @@
+最好换一种实现方式，通过在index time做文章，选用合适的分词器，比如nGram tokenizer预处理数据，然后使用更廉价的term query来实现同等的模糊搜索功能。
