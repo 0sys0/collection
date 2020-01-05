@@ -2,3 +2,6 @@ ES的写入有两种方式一种是逐个文档写入（index），另一种是�
 
 
 > https://cloud.tencent.com/developer/article/1361160
+
+Elasticsearch查询解析
+> https://cloud.tencent.com/developer/article/1154904
