@@ -12,3 +12,5 @@ Elasticsearch查询解析
 
 
 ES提供用户Transport和Rest两种接口：用户可以通过ES官方提供的Transport Client访问ES集群，这种接口使用的协议与ES集群内部节点间的通讯协议一致；也可以使用简单易用的Rest接口，直接发送Http请求访问ES集群，由ES完成Rest请求到Transport请求的转换。考虑Rest接口的易用性，以及Rest层极低的额外开销，建议用户直接使用Rest接口。
+
+上述即为查询入口的处理流程，它对任何Rest请求都适用。实际上，除了自带的Rest请求外，ES提供强大的扩展能力，*用户可以通过自定义插件实现自己的请求及处理逻辑。*此外，ES还支持自定义过滤器Filter，在实际进行Transport层处理前进行统一的预处理工作。
